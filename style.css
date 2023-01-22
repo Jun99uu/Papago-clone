@@ -349,3 +349,10 @@ footer {
   font-weight: 900;
   color: #adadad;
 }
+
+@media (min-height: 800px) {
+  footer {
+    position: absolute;
+    bottom: 0px;
+  }
+}
