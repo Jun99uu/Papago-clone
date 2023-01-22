@@ -1,3 +1,8 @@
+* {
+  box-sizing: border-box;
+  font-family: "SUIT Variable", sans-serif;
+}
+
 body {
   margin: 0px;
   padding: 0px;
@@ -34,17 +39,13 @@ header {
 .header-ul li {
   font-size: 14px;
   font-weight: 700;
-  color: #1b1b1b;
+  color: #3a3a3a;
   cursor: pointer;
 }
 
 #vertical-line {
   font-size: 12px;
   color: #cacaca;
-}
-
-.header-ul li:not(#logo) {
-  padding-bottom: 5px;
 }
 
 .header-ul li a {
@@ -65,4 +66,145 @@ header {
   height: 35px;
   border-radius: 100%;
   object-fit: cover;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+}
+
+section {
+  width: 100%;
+  padding: 70px 0px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.papago-container {
+  min-width: 800px;
+  width: 70%;
+  height: 350px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+}
+
+.papago-box {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px,
+    rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;
+  overflow: hidden;
+}
+
+.papago-header {
+  width: 100%;
+  height: 58px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 23px;
+  border-bottom: 0.5px solid rgb(233, 233, 233);
+}
+
+.papago-header span {
+  font-size: 15px;
+  font-weight: 600;
+  color: #474747;
+  cursor: pointer;
+  transition: all 0.15s;
+}
+
+.papago-header button {
+  border: none;
+  font-size: 16px;
+  font-weight: 600;
+  color: #474747;
+  background: none;
+  padding: 0px;
+  cursor: pointer;
+  transition: all 0.15s;
+}
+
+.papago-header span:hover,
+.papago-header button:hover {
+  color: #21dc6d;
+}
+
+.papago-textarea {
+  width: 100%;
+  height: 65.5%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  position: relative;
+}
+
+.papago-textarea textarea {
+  width: 100%;
+  height: 100%;
+  border: none;
+  outline: none;
+  resize: none;
+  padding: 15px;
+  font-size: 18px;
+  color: #1b1b1b;
+  font-weight: 600;
+  font-family: "SUIT Variable", sans-serif;
+}
+
+.papago-textarea span {
+  font-size: 13px;
+  color: #474747;
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+}
+
+.papago-footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border-top: 0.5px solid rgb(233, 233, 233);
+}
+
+.papago-footer ul {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.papago-footer ul li {
+  width: 84px;
+  height: 62px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-right: 0.5px solid rgb(233, 233, 233);
+  cursor: pointer;
+}
+
+.papago-footer ul li img {
+  width: 35%;
+  height: auto;
+}
+
+.papago-footer button {
+  border: none;
+  background-color: #21dc6d;
+  color: white;
+  font-size: 16px;
+  font-weight: 700;
+  padding: 0px 25px;
+  cursor: pointer;
+}
+
+.default-green img {
+  filter: brightness(0);
+  transition: all 0.15s;
+}
+
+.default-green:hover > img {
+  filter: brightness(1);
 }
