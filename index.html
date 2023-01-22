@@ -4,27 +4,42 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- css 링크 -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- 웹 폰트 링크 -->
+    <link
+      href="https://cdn.jsdelivr.net/gh/sunn-us/SUIT/fonts/variable/woff2/SUIT-Variable.css"
+      rel="stylesheet"
+    />
+    <!-- 파비콘 | 이미지 링크는 파파고에서 훔쳐옴ㅋㅋ -->
+    <link rel="shortcut icon" href="https://papago.naver.com/favicon.ico" />
+    <!-- 탭 제목 -->
     <title>Papakyu</title>
   </head>
   <body>
     <header>
-      <a href="https://papago.naver.com/"
-        ><img
-          src="https://papago.naver.com/808d2dddbe64c49fbae1bf503c124767.svg"
-          alt="papago-logo"
-      /></a>
-      <ul>
-        <li><a>숭멋사🦁</a></li>
+      <!-- 말 그대로 헤더 담당.
+        구조 한 번 보고 개선하고 싶은점 있으면 언젠든 PR ㄱㄱ -->
+      <ul class="header-ul">
+        <li id="logo">
+          <a href="https://papago.naver.com/"
+            ><img
+              src="https://papago.naver.com/808d2dddbe64c49fbae1bf503c124767.svg"
+              alt="papago-logo"
+          /></a>
+        </li>
+        <li><a>숭멋사</a></li>
         <li><a>11기</a></li>
         <li><a>아기사자들</a></li>
-        <li>|</li>
+        <li id="vertical-line">|</li>
         <li><a>귀요미❤</a></li>
       </ul>
-      <ul>
-        <li>루시최고야</li>
+      <ul class="header-ul">
+        <li id="name">루시최고야</li>
         <li>
           <img
             src="https://i.pinimg.com/564x/ff/ac/d8/ffacd8ce790f36a011b1d566a89cb328.jpg"
+            id="profile-img"
           />
         </li>
       </ul>
