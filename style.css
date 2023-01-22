@@ -208,3 +208,144 @@ section {
 .default-green:hover > img {
   filter: brightness(1);
 }
+
+footer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  background-color: #fbfbfb;
+}
+
+#footer-first {
+  width: 100%;
+  padding: 30px 60px;
+  border-bottom: 0.5px solid rgb(231, 231, 231);
+}
+
+#footer-first ul,
+#footer-first ul li,
+#footer-first ul li span:nth-child(1) {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+#footer-first ul {
+  justify-content: space-between;
+}
+
+#footer-first ul li {
+  justify-content: center;
+  gap: 10px;
+}
+
+#footer-first ul li span:nth-child(1) {
+  font-size: 12px;
+  font-weight: 700;
+  justify-content: center;
+  background-color: #1caafc;
+  border-radius: 500px;
+  color: white;
+  padding: 3px 7px 4.5px 7px;
+}
+
+#footer-first ul li span:nth-child(2) {
+  font-size: 13px;
+  font-weight: 600;
+  color: #474747;
+  padding-bottom: 1.5px;
+}
+
+#footer-first ul li img:nth-child(1) {
+  height: 16px;
+  width: auto;
+}
+
+#footer-first ul li img:nth-child(2) {
+  height: 20px;
+  width: auto;
+}
+
+#footer-second {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 30px 60px 50px 60px;
+  gap: 20px;
+}
+
+#footer-second ul:nth-child(1) {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#footer-second ul:nth-child(1) li:not(#language-box) {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #474747;
+}
+
+#app-icon {
+  width: 45px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px,
+    rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;
+}
+
+#app-icon img {
+  width: 80%;
+  height: auto;
+}
+
+#language-box {
+  font-size: 13px;
+  font-weight: 700;
+  background-color: #adadad;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 500px;
+}
+
+#footer-second ul:nth-child(2) {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 5px;
+  font-size: 13px;
+  font-weight: 500;
+  color: #474747;
+}
+
+#footer-second ul:nth-child(2) li {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+#footer-second ul:nth-child(2) li span {
+  cursor: pointer;
+  transition: all 0.15s;
+}
+
+#footer-second ul:nth-child(2) li span:hover {
+  color: #1b1b1b;
+  font-weight: 600;
+}
+
+#cc {
+  font-size: 12px;
+  font-weight: 900;
+  color: #adadad;
+}
